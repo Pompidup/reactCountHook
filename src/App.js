@@ -10,10 +10,10 @@ function App() {
       <p>Le compteur est à : {count} </p>
       <input value={count} onChange={(e) => setCount(e.target.value)}>
       </input>
-      <button onClick={() => setCount(count + 1)}>
+      <button onClick={() => setCount(parseInt(count) + 1)}>
         +1
       </button>
-      <button onClick={() => setCount(count - 1)}>
+      <button onClick={() => setCount(parseInt(count) - 1)}>
         -1
       </button>
     </div>
